@@ -1,0 +1,213 @@
+body{
+    background-image: url(/wamp/www/Gestion_patient/image/1.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.home {
+    display: flex;
+    margin: 50px 50px 20px 150px;
+}
+#container-fluid{
+    width:1150px;
+    margin : 10px 30px 10px 80px;
+}
+#container{
+    width:650px;
+    margin:0 auto;
+    margin-top:5%;
+}
+#container0{
+    width:300px;
+    margin:0 auto;
+    margin-top:3%;
+    margin-left: 30px;
+}
+#container0 img{
+    width: 300px;
+    height: 250px;
+    border-radius: 50%;
+}
+#container1{
+    width:300px;
+    margin:0 auto;
+    margin-top:10%;
+    margin-left: 10px;
+}
+#container1 img{
+    width: 350px;
+    height: 300px;
+    border-radius: 50%;
+}
+#lien a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'castellar';
+    margin : 27px 5px 0px 30px;
+}
+
+#atext1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'castellar';
+    text-align: center;
+    margin-top: 10%;
+}
+#atext3{
+    color: rgb(235, 224, 224);
+    font-size: 20px;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    margin : 30px 70px 40px 70px;
+}
+
+form {
+    padding: 20px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#frm {
+    width: 70%;
+    padding: 20px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+/* Full-width inputs */
+input[type=text], input[type=password], input[type=number], input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #8d078b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS';
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #8d078b;
+    border: 1px solid #8d078b;
+}
+input[type=reset] {
+    background-color: #2112cc;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS';
+}
+input[type=reset]:hover {
+    background-color: white;
+    color: #2112cc;
+    border: 1px solid #2112cc;
+}
+label {
+    font-size: 18px;
+    font-family: 'Trebuchet MS';
+}
+#text a {
+    color: #fff;
+    justify-content: space-between;
+    text-decoration: none;
+    font-family:algerian;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+#texte2{
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Papyrus';
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+}
+#texte3{
+    text-align: center;
+    font-family: 'Papyrus';
+    font-size: 27px;
+    color: #fff;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-top: 3%;
+}
+#texte4{
+    color: #8d078b;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    font-size: 30px;
+}
+#texte3 a {
+    color: #fff;
+    padding-left: 800px;
+
+}
+#actionb {
+    padding: 10px 20px 20px 500px ;
+}
+#bouton {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+table tr th td {
+    text-align: center;
+    margin: 10px;
+    border: 1px;
+    width: 100%;
+}
+.gallery .gallery-item {
+    overflow: hidden;
+    border-right: 3px solid #8d078b;
+    border-bottom: 3px solid #8d078b;
+}
+.gallery .gallery-item img {
+    transition: all ease-in-out 0.8s;
+}
+.gallery .gallery-item:hover img {
+    transform: scale(1.1);
+}
+.btn-blue{
+    border:none;
+    background:#3a74e8;
+    border:1px solid #3a74e8;
+    color:white;
+    padding:2px 15px;
+    border-radius:5px;
+    text-decoration:none;
+    font-size:14px;
+}
+.btn-red{
+    border:none;
+    background:#cf562d;
+    border:1px solid #cf562d;
+    color:white;
+    padding:2px 15px;
+    border-radius:5px;
+    text-decoration:none;
+    font-size:14px;
+}
+p{
+    text-align: center;
+    color: black;
+}

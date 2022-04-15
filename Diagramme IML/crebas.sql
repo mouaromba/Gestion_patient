@@ -18,7 +18,7 @@ create table Patient
    telephone            int,
    adresse              varchar(254),
    age                  int,
-   G_S                  tring,
+   G_S                  varchar(254),
    antecedent           varchar(254),
    taille               float,
    poid                 float,

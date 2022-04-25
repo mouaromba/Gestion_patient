@@ -1,131 +1,30 @@
-body{
-    background-image: url(./image.png);
-    background-repeat: no-repeat; 
+.nic_bg{
+    background-image: url('image/bgimg1.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-}
-.index {
-    display: flex;
-    margin: 50px 50px 20px 150px;
-}
-#container-fluid{
-    width:1150px;
-    margin : 10px 30px 10px 80px;
-}
-#container{
-    width:650px;
-    margin:0 auto;
-    margin-top:5%;
-}
-#container0{
-    width:300px;
-    margin:0 auto;
-    margin-top:3%;
-    margin-left: 30px;
-}
-#container0 img{
-    width: 300px;
-    height: 250px;
-   
-}
-#container1{
-    width:300px;
-    margin:0 auto;
-    margin-top:10%;
-    margin-left: 10px;
-}
-#container1 img{
-    width: 350px;
-    height: 300px;
-    border-radius: 0%;
-}
-#lien a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'castellar';
-    margin : 27px 5px 0px 30px;
-}
-
-#atext1{
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'castellar';
-    text-align: center;
-    margin-top: 10%;
-}
-#atext3{
-    color: rgb(235, 224, 224);
-    font-size: 20px;
-    font-family: 'Trebuchet MS';
-    text-align: center;
-    margin : 30px 70px 40px 70px;
-}
-
-form {
-    padding: 20px;
-    border: 1px solid #f1f1f1;
-    background: #fff;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-#frm {
-    width: 70%;
-    padding: 20px;
-    border: 1px solid #f1f1f1;
-    background: #fff;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-/* Full-width inputs */
-input[type=text], input[type=password], input[type=number], input[type=date], select {
+    height: 100%;
+    display: block;
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid rgb(204, 204, 204);
-    box-sizing: border-box;
 }
 
-input[type=submit] {
-    background-color: #082174;
-    color: rgb(255, 255, 255);
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
+.nic_bg1{
+    background-image: url('image/bgimg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: block;
     width: 100%;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: 'Trebuchet MS';
-}
-input[type=submit]:hover {
-    background-color: rgb(255, 255, 255);
-    color: #20078d;
-    border: 1px solid #24078d;
-}
-input[type=reset] {
-    background-color: #2112cc;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    border-radius: 1px;
-    font-size: 16px;
-    font-family: 'Trebuchet MS';
-}
-input[type=reset]:hover {
-    background-color: white;
-    color: #2112cc;
-    border: 1px solid #2112cc;
-}
-label {
-    font-size: 18px;
-    font-family: 'Trebuchet MS';
-}
-hr{
-    size: 30%;
-    color: #fff;
 }
 
+.nic_detail
+{
+
+width: 95%;
+border: 1px solid green;
+margin-left: 2em;
+border-radius: 1em;
+background-color: white;
+margin-top: 1em;
+
+
+}

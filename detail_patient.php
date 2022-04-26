@@ -1,5 +1,5 @@
 <?php
-require_once 'base.php';
+require_once './fonctions/base.php';
 require_once 'autoload.php';
 
 $bd=bd();
@@ -21,13 +21,13 @@ if(isset($_GET['id']))
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <title>Detail patient</title>
-        <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../style.css">
-        <?php include 'style.php';?>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <?php include 'style/style.php';?>
     </head>
     <body>
 
-    <?php include 'menu_page.php';?> 
+    <?php include 'include/menu.php';?> 
     <div class="nic_bg ">
     <br>
     <div style="text-align: center;">
@@ -50,7 +50,7 @@ if(isset($_GET['id']))
     <label for="" style="width: 200px;"><strong>Tel personne proche:</strong></label><span> <?= $valuer->getTelPersonneProche()?> </span>  <br>
   </div>
   <div class="nic_detail3 col-md-8" style="margin: 15px;">
-    <img src="../image/accueil.jpg" class="nic_bg" alt="" style="width: 740px; height: 340px;">
+    <img src="image/accueil.jpg" class="nic_bg" alt="" style="width: 740px; height: 340px;">
   </div>
 </div>   
 <br> 
@@ -59,11 +59,11 @@ if(isset($_GET['id']))
 </div>
 <br>
 </div>
-<?php include 'pied.php';?>
-<?php include 'script.php';?>
-<script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
-<script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-<script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+<?php include 'include/pied.php';?>
+<?php include 'include/script.php';?>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
 
 <script>
 function myFunction() {

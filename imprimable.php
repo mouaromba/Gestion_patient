@@ -1,5 +1,5 @@
 <?php
-require_once "connection.php";
+require_once './fonctions/connection.php';
 ?>
 
 <!DOCTYPE html>
@@ -10,8 +10,8 @@ require_once "connection.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imprimer</title>
     <?php include 'style.php';?>
-    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body onload="window.print()">
 <h1 style="font-family: Bahnschrift SemiCondensed; text-align: center;">LISTE DES PATIENTS</h1>
@@ -53,9 +53,9 @@ require_once "connection.php";
                             </div>
                             <!-- /.table-responsive -->
                         </div>
-                        <?php include 'script.php';?>
-                        <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
-                        <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-                        <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+                        <?php include 'include/script.php';?>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
                         </body>
 </html>

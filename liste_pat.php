@@ -1,6 +1,6 @@
 <?php
 
-require_once "connection.php";
+require_once './fonctions/connection.php';
 	
 if(isset($_REQUEST['delete_id']))
 {
@@ -28,12 +28,12 @@ if(isset($_REQUEST['delete_id']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste</title>
-    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../style.css">
-    <?php include 'style.php';?>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <?php include 'style/style.php';?>
 </head>
 <body>
-<?php include 'menu_page.php';?>
+<?php include 'include/menu.php';?>
 <div class="nic_bg ">
 <h1 style="font-family: Algerian; text-align: center;">LISTE DES PATIENTS</h1>
 	
@@ -54,7 +54,6 @@ if(isset($_REQUEST['delete_id']))
                                 <table id="myTable" class="table table-striped table-bordered table-hover" style="background-color: white;">
                                     <thead>
                                         <tr>
-                                            <th>N°</th>
                                             <th>NOM</th>
 											<th>PRENOM</th>
                                             <th>GENRE</th>
@@ -73,15 +72,14 @@ if(isset($_REQUEST['delete_id']))
 									{
 									?>
                                         <tr>
-                                            <td><?php echo $row['id']; ?></td>
                                             <td><?php echo $row['nom']; ?></td>
 											<td><?php echo $row['prenom']; ?></td>
                                             <td><?php echo $row['genre']; ?></td>
                                             <td><?php echo $row['telephone']; ?></td>
                                             <td><?php echo $row['adresse']; ?></td>
-                                            <td><a href="detail_patient.php?id=<?php echo $row['id']; ?>" class="btn "> <img src="../image/detail.ico"  alt=""> </a></td>
-                                            <td><a href="edit.php?update_id=<?php echo $row['id']; ?>" class="btn "> <img src="../image/modif0.ico"  alt=""> </a></td>
-                                            <td><a href="?delete_id=<?php echo $row['id']; ?>" class="btn " onclick='return confirm("Etes-vous sûr de vouloir supprimer?")'>  <img src="../image/delete.ico"  alt=""> </a></td>
+                                            <td><a href="detail_patient.php?id=<?php echo $row['id']; ?>" class="btn "> <img src="image/detail.ico"  alt=""> </a></td>
+                                            <td><a href="edit.php?update_id=<?php echo $row['id']; ?>" class="btn "> <img src="image/modif0.ico"  alt=""> </a></td>
+                                            <td><a href="?delete_id=<?php echo $row['id']; ?>" class="btn " onclick='return confirm("Etes-vous sûr de vouloir supprimer?")'>  <img src="image/delete.ico"  alt=""> </a></td>
                                         </tr>
                                     <?php
 									}
@@ -110,11 +108,11 @@ if(isset($_REQUEST['delete_id']))
     </div>
     <br>
 </div>
-      <?php include 'pied.php';?>
-      <?php include 'script.php';?>
-      <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
-      <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-      <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+<?php include 'include/pied.php';?>
+<?php include 'include/script.php';?>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
       
 <script>
 function myFunction() {

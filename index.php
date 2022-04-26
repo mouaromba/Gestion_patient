@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="pages/style.css">
-    <?php include 'pages/style.php';?>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <?php include 'style/style.php';?>
 </head>
 <body>
-<?php include 'pages/menu.php';?>
+<?php include 'include/menu.php';?>
 <div></div>  
 <div class="photos-fluid d-flex">
  <div class="col-md-6" style="background-color: blue;">
@@ -126,11 +126,11 @@
     L'APPLICATION PATIENT<br> DE LA <br><br>CLINIQUE <strong style="color: blue;">HUMURA</strong></h1>
   </div>
 </div>
-      <?php include 'pages/pied.php';?>
-      <?php include 'pages/script.php';?>
-<script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
-<script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-<script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>   
+<?php include 'include/pied.php';?>
+<?php include 'include/script.php';?>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>   
       
 </body>
 </html>

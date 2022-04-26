@@ -1,6 +1,6 @@
 <?php
 
-require_once "connection.php";
+require_once './fonctions/connection.php';
 
 if(isset($_REQUEST['update_id']))
 {
@@ -123,12 +123,12 @@ if(isset($_REQUEST['btn_update']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier</title>
-	<link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../style.css">
-    <?php include 'style.php';?>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <?php include 'style/style.php';?>
 </head>
 <body>
-<?php include 'menu_page.php';?> 
+<?php include 'include/menu.php';?>  
 	
 <div class="nic_bg1 ">
 <div class="wrapper">
@@ -283,10 +283,10 @@ Mettre à jour
 	</div>
 			<br>
 </div>								
-	<?php include 'pied.php';?>
-    <?php include 'script.php';?>
-	<script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
-      <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-      <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>								
+<?php include 'include/pied.php';?>
+<?php include 'include/script.php';?>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>								
 	</body>
 </html>

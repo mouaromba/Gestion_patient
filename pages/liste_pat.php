@@ -54,6 +54,7 @@ if(isset($_REQUEST['delete_id']))
                                 <table id="myTable" class="table table-striped table-bordered table-hover" style="background-color: white;">
                                     <thead>
                                         <tr>
+                                            <th>N°</th>
                                             <th>NOM</th>
 											<th>PRENOM</th>
                                             <th>GENRE</th>
@@ -72,6 +73,7 @@ if(isset($_REQUEST['delete_id']))
 									{
 									?>
                                         <tr>
+                                            <td><?php echo $row['id']; ?></td>
                                             <td><?php echo $row['nom']; ?></td>
 											<td><?php echo $row['prenom']; ?></td>
                                             <td><?php echo $row['genre']; ?></td>

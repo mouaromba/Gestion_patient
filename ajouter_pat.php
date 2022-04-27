@@ -256,7 +256,6 @@ Insérer
 <?php include 'include/pied.php';?>
 <?php include 'include/script.php';?>
 <script src="js/bootstrap.bundle.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap.bundle.js"></script>									
+<script src="js/bootstrap.min.js"></script>									
 	</body>
 </html>

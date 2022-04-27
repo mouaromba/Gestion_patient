@@ -56,6 +56,5 @@ require_once './fonctions/connection.php';
                         <?php include 'include/script.php';?>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap.bundle.js"></script> 
                         </body>
 </html>

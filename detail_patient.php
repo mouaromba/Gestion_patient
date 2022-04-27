@@ -1,5 +1,5 @@
 <?php
-require_once './fonctions/base.php';
+require_once './fonctions/connection.php';
 require_once 'autoload.php';
 
 $bd=bd();
@@ -19,11 +19,9 @@ if(isset($_GET['id']))
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Detail patient</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
-        <?php include 'style/style.php';?>
+        <title>Detail patient</title>
+        <?php include 'include/style.php';?>
     </head>
     <body>
 

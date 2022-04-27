@@ -7,7 +7,7 @@
     <title>Accueil</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <?php include 'style/style.php';?>
+    <?php include 'include/style.php';?>
 </head>
 <body>
 <?php include 'include/menu.php';?>

@@ -125,7 +125,7 @@ if(isset($_REQUEST['btn_update']))
     <title>Modifier</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <?php include 'style/style.php';?>
+    <?php include 'include/style.php';?>
 </head>
 <body>
 <?php include 'include/menu.php';?>  
@@ -154,7 +154,7 @@ if(isset($_REQUEST['btn_update']))
         <?php
 		}
 		?>   
-			<center><h2>Modifier</h2></center>
+			<center><h2>MODIFIER</h2></center>
 			<center><form method="post" class="form-horizontal">
 					
 			<div class="form-group mb-3">

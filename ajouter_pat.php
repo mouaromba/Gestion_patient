@@ -106,7 +106,7 @@ if(isset($_REQUEST['btn_insert']))
     <title>Ajouter</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <?php include 'style/style.php';?>
+    <?php include 'include/style.php';?>
 </head>
 <body>
 <?php include 'include/menu.php';?>  

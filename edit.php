@@ -154,95 +154,95 @@ if(isset($_REQUEST['btn_update']))
         <?php
 		}
 		?>   
-			<center><h2>MODIFIER</h2></center>
-			<center><form method="post" class="form-horizontal">
+			<div style="text-align: center;"><h2>MODIFIER</h2></div>
+			<form method="post" class="form-horizontal">
 					
 			<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;" >NOM</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;" >NOM</label>
 				<div class="col-sm-6">
-				<input type="text" name="nom" class="form-control" value="<?php echo $nom; ?>">
+				<input type="text" name="nom" class="form-control" style="margin-left: 250px;" value="<?php echo $nom; ?>">
 				</div>
 				</div>
 					
 				<div class="form-group mb-3" >
-				<label class="col-sm-3 control-label" style=" text-align: left;">PRENOM</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">PRENOM</label>
 				<div class="col-sm-6">
-				<input type="text" name="prenom" class="form-control" value="<?php echo $prenom; ?>">
+				<input type="text" name="prenom" class="form-control" style="margin-left: 250px;" value="<?php echo $prenom; ?>">
 				</div>
 				</div>
 
 				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;">GENRE</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">GENRE</label>
 				<div class="col-sm-6">
-				<input type="text" name="genre" class="form-control" value="<?php echo $genre; ?>">
+				<input type="text" name="genre" class="form-control" style="margin-left: 250px;" value="<?php echo $genre; ?>">
 				</div>
 				</div>
 
 				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;">TELEPHONE</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">TELEPHONE</label>
 				<div class="col-sm-6">
-				<input type="text" name="telephone" class="form-control" value="<?php echo $telephone; ?>">
+				<input type="text" name="telephone" class="form-control" style="margin-left: 250px;" value="<?php echo $telephone; ?>">
 				</div>
 				</div>
 				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;" >ADRESSE</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;" >ADRESSE</label>
 				<div class="col-sm-6">
-				<input type="text" name="adresse" class="form-control" value="<?php echo $adresse; ?>">
+				<input type="text" name="adresse" class="form-control" style="margin-left: 250px;" value="<?php echo $adresse; ?>">
 				</div>
 				</div>
 					
 				<div class="form-group mb-3" >
-				<label class="col-sm-3 control-label" style=" text-align: left;">AGE</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">AGE</label>
 				<div class="col-sm-6">
-				<input type="text" name="age" class="form-control" value="<?php echo $age; ?>">
+				<input type="text" name="age" class="form-control" style="margin-left: 250px;" value="<?php echo $age; ?>">
 				</div>
 				</div>
 
 				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;">GROUPE SANGUIN</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">GROUPE SANGUIN</label>
 				<div class="col-sm-6">
-				<input type="text" name="gSanguin" class="form-control" value="<?php echo $gSanguin; ?>">
+				<input type="text" name="gSanguin" class="form-control" style="margin-left: 250px;" value="<?php echo $gSanguin; ?>">
 				</div>
 				</div>
 				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;" >MALADIE</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;" >MALADIE</label>
 				<div class="col-sm-6">
-				<input type="text" name="maladie" class="form-control" value="<?php echo $maladie; ?>">
+				<input type="text" name="maladie" class="form-control" style="margin-left: 250px;" value="<?php echo $maladie; ?>">
 				</div>
 				</div>
 					
 				<div class="form-group mb-3" >
-				<label class="col-sm-3 control-label" style=" text-align: left;">ANTECEDENT</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">ANTECEDENT</label>
 				<div class="col-sm-6">
-				<input type="text" name="antecedent" class="form-control" value="<?php echo $antecedent; ?>">
+				<input type="text" name="antecedent" class="form-control" style="margin-left: 250px;" value="<?php echo $antecedent; ?>">
 				</div>
 				</div>
 
 				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;">TAILLE</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">TAILLE</label>
 				<div class="col-sm-6">
-				<input type="text" name="taille" class="form-control" value="<?php echo $taille; ?>">
+				<input type="text" name="taille" class="form-control" style="margin-left: 250px;" value="<?php echo $taille; ?>">
 				</div>
 				</div>
 
 				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;">POIDS</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">POIDS</label>
 				<div class="col-sm-6">
-				<input type="text" name="poids" class="form-control" value="<?php echo $poids; ?>">
+				<input type="text" name="poids" class="form-control" style="margin-left: 250px;" value="<?php echo $poids; ?>">
 				</div>
 				</div>
 
 				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;">SITUATION MATRIMONIALE</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">SITUATION MATRIMONIALE</label>
 				<div class="col-sm-6">
-				<input type="text" name="sMatrimoniale" class="form-control" value="<?php echo $sMatrimoniale; ?>">
+				<input type="text" name="sMatrimoniale" class="form-control" style="margin-left: 250px;" value="<?php echo $sMatrimoniale; ?>">
 				</div>
 				</div>
 
 				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;">TEL PERSONNE PROCHE</label>
+				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">TEL PERSONNE PROCHE</label>
 				<div class="col-sm-6">
-				<input type="text" name="telPersonneProche" class="form-control" value="<?php echo $telPersonneProche; ?>">
+				<input type="text" name="telPersonneProche" class="form-control" style="margin-left: 250px;" value="<?php echo $telPersonneProche; ?>">
 				</div>
 				</div>
 

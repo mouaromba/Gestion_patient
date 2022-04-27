@@ -105,7 +105,7 @@ if(isset($_REQUEST['btn_insert']))
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajouter</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="include/style.css">
     <?php include 'include/style.php';?>
 </head>
 <body>
@@ -217,7 +217,7 @@ if(isset($_REQUEST['btn_insert']))
 				<label class="col-sm-6 control-label" style=" text-align: left;margin-left: 300px;">TEL PERSONNE PROCHE</label>
 				<input type="text" name="telPersonneProche" class="form-control" placeholder="Telephone personne proche" style="margin-left: 250px;" required />
 				</div>
-				<div class="col-sm-6 mb-3">
+				<div class="col-sm-6 mb-3" >
 				<div class="col-sm-offset-3 col-sm-9 m-t-15">
 					<!-- Button trigger modal -->
 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">

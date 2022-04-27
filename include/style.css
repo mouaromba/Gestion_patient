@@ -1,5 +1,5 @@
 .nic_bg{
-    background-image: url('image/bgimg1.jpg');
+    background-image: url('../image/bgimg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -8,7 +8,7 @@
 }
 
 .nic_bg1{
-    background-image: url('image/bgimg3.jpg');
+    background-image: url('../image/bgimg3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;

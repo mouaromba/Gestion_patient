@@ -19,7 +19,7 @@ if(isset($_GET['id']))
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="include/style.css">
         <title>Detail patient</title>
         <?php include 'include/style.php';?>
     </head>

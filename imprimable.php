@@ -11,7 +11,7 @@ require_once './fonctions/connection.php';
     <title>Imprimer</title>
     <?php include 'include/style.php';?>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="include/style.css">
 </head>
 <body onload="window.print()">
 <h1 style="font-family: Bahnschrift SemiCondensed; text-align: center;">LISTE DES PATIENTS</h1>

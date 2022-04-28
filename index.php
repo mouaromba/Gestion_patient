@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="include/bootstrap.min.css">
     <link rel="stylesheet" href="include/style.css">
     <?php include 'include/style.php';?>
 </head>
@@ -128,8 +128,8 @@
 </div>
 <?php include 'include/pied.php';?>
 <?php include 'include/script.php';?>
-<script src="js/bootstrap.bundle.js"></script>
-<script src="js/bootstrap.min.js"></script>  
+<script src="include/bootstrap.bundle.min.js"></script>
+<script src="include/bootstrap.min.js"></script>  
       
 </body>
 </html>

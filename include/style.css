@@ -26,3 +26,12 @@ border-radius: 1em;
 background-color: white;
 margin-top: 1em;
 }
+
+.nic_bg3{
+    background-image: url('../image/patient5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: block;
+    width: 100%;
+}

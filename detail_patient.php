@@ -18,7 +18,7 @@ if(isset($_GET['id']))
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="include/bootstrap.min.css">
         <link rel="stylesheet" href="include/style.css">
         <title>Detail patient</title>
         <?php include 'include/style.php';?>
@@ -26,10 +26,10 @@ if(isset($_GET['id']))
     <body>
 
     <?php include 'include/menu.php';?> 
-    <div class="nic_bg ">
+    <div class="nic_bg1">
     <br>
     <div style="text-align: center;">
-      <h4 style="font-family: Algerian;">DETAIL DU PATIENT N° <?= $id ?></h4>
+      <h4 style="font-family: Algerian;color: blue;">DETAIL DU PATIENT N° <?= $id ?></h4>
     </div>
 <div class="nic_detail d-flex" id='formulaire_bircof' style="background-color: white; margin-left: 20px; margin-right: 20px;">
   <div class="nic_detail2 col-md-4" style="margin: 30px;">
@@ -48,7 +48,10 @@ if(isset($_GET['id']))
     <label for="" style="width: 200px;"><strong>Tel personne proche:</strong></label><span> <?= $valuer->getTelPersonneProche()?> </span>  <br>
   </div>
   <div class="nic_detail3 col-md-8" style="margin: 15px;">
-    <img src="image/accueil.jpg" class="nic_bg" alt="" style="width: 740px; height: 340px;">
+    <img src="image/u31.png" class="nic_bg" alt="" style="width: 740px; height: 340px; position: absolute; z-index: 0; object-fit: 
+    cover; object-position: center;">
+    <h1 class="nic_nm" style="font-size: 50px; text-align: center; margin: 0; padding-top: 11%; color: yellow; 
+    position: relative; background-color: transparent; width: 740px; height: 340px;">CLINIQUE HUMURA</h1>
   </div>
 </div>   
 <br> 
@@ -59,8 +62,8 @@ if(isset($_GET['id']))
 </div>
 <?php include 'include/pied.php';?>
 <?php include 'include/script.php';?>
-<script src="js/bootstrap.bundle.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="include/bootstrap.bundle.min.js"></script>
+<script src="include/bootstrap.min.js"></script>
 
 <script>
 function myFunction() {
@@ -83,7 +86,6 @@ function myFunction() {
 }
 </script>
 
-
-    </body>
+</body>
 </html>
 

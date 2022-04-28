@@ -123,7 +123,7 @@ if(isset($_REQUEST['btn_update']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="include/bootstrap.min.css">
     <link rel="stylesheet" href="include/style.css">
     <?php include 'include/style.php';?>
 </head>
@@ -131,161 +131,141 @@ if(isset($_REQUEST['btn_update']))
 <?php include 'include/menu.php';?>  
 	
 <div class="nic_bg1 ">
-<div class="wrapper">
-	
-	<div class="container">
-			
-		<div class="col-lg-12">
-		
-		<?php
-		if(isset($errorMsg))
-		{
-			?>
-            <div class="alert alert-danger">
-            	<strong>WRONG ! <?php echo $errorMsg; ?></strong>
-            </div>
-            <?php
-		}
-		if(isset($updateMsg)){
-		?>
-			<div class="alert alert-success">
-				<strong>UPDATE ! <?php echo $updateMsg; ?></strong>
-			</div>
-        <?php
-		}
-		?>   
-			<div style="text-align: center;"><h2>MODIFIER</h2></div>
-			<form method="post" class="form-horizontal">
-					
-			<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;" >NOM</label>
-				<div class="col-sm-6">
-				<input type="text" name="nom" class="form-control" style="margin-left: 250px;" value="<?php echo $nom; ?>">
-				</div>
-				</div>
-					
-				<div class="form-group mb-3" >
-				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">PRENOM</label>
-				<div class="col-sm-6">
-				<input type="text" name="prenom" class="form-control" style="margin-left: 250px;" value="<?php echo $prenom; ?>">
-				</div>
-				</div>
-
-				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">GENRE</label>
-				<div class="col-sm-6">
-				<input type="text" name="genre" class="form-control" style="margin-left: 250px;" value="<?php echo $genre; ?>">
-				</div>
-				</div>
-
-				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">TELEPHONE</label>
-				<div class="col-sm-6">
-				<input type="text" name="telephone" class="form-control" style="margin-left: 250px;" value="<?php echo $telephone; ?>">
-				</div>
-				</div>
-				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;" >ADRESSE</label>
-				<div class="col-sm-6">
-				<input type="text" name="adresse" class="form-control" style="margin-left: 250px;" value="<?php echo $adresse; ?>">
-				</div>
-				</div>
-					
-				<div class="form-group mb-3" >
-				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">AGE</label>
-				<div class="col-sm-6">
-				<input type="text" name="age" class="form-control" style="margin-left: 250px;" value="<?php echo $age; ?>">
-				</div>
-				</div>
-
-				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">GROUPE SANGUIN</label>
-				<div class="col-sm-6">
-				<input type="text" name="gSanguin" class="form-control" style="margin-left: 250px;" value="<?php echo $gSanguin; ?>">
-				</div>
-				</div>
-				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;" >MALADIE</label>
-				<div class="col-sm-6">
-				<input type="text" name="maladie" class="form-control" style="margin-left: 250px;" value="<?php echo $maladie; ?>">
-				</div>
-				</div>
-					
-				<div class="form-group mb-3" >
-				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">ANTECEDENT</label>
-				<div class="col-sm-6">
-				<input type="text" name="antecedent" class="form-control" style="margin-left: 250px;" value="<?php echo $antecedent; ?>">
-				</div>
-				</div>
-
-				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">TAILLE</label>
-				<div class="col-sm-6">
-				<input type="text" name="taille" class="form-control" style="margin-left: 250px;" value="<?php echo $taille; ?>">
-				</div>
-				</div>
-
-				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">POIDS</label>
-				<div class="col-sm-6">
-				<input type="text" name="poids" class="form-control" style="margin-left: 250px;" value="<?php echo $poids; ?>">
-				</div>
-				</div>
-
-				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">SITUATION MATRIMONIALE</label>
-				<div class="col-sm-6">
-				<input type="text" name="sMatrimoniale" class="form-control" style="margin-left: 250px;" value="<?php echo $sMatrimoniale; ?>">
-				</div>
-				</div>
-
-				<div class="form-group mb-3">
-				<label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">TEL PERSONNE PROCHE</label>
-				<div class="col-sm-6">
-				<input type="text" name="telPersonneProche" class="form-control" style="margin-left: 250px;" value="<?php echo $telPersonneProche; ?>">
-				</div>
-				</div>
-
-				<div class="form-group">
-				<div class="col-sm-offset-3 col-sm-9 m-t-15">
-					<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-Mettre à jour
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-    
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Voulez vous vraiment modifier cette donnée?
-      </div>
-      <div class="modal-footer">
-	   <button  class="btn btn-success" type="submit"  name="btn_update" class="btn btn-danger " >Valider</button>
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button> 
-      </div>
-    </div>
-  </div>
-</div>
-		<a href="liste_pat.php" class="btn btn-danger">Annuler</a>
-		</div>
-		</div>
-			</form>
-			
-		</div>
-		
+    <div class="wrapper">
+	    <div class="container">
+		    <div class="col-lg-12">
+		        <?php
+		        if(isset($errorMsg))
+		        {
+			    ?>
+                <div class="alert alert-danger">
+            	    <strong>WRONG ! <?php echo $errorMsg; ?></strong>
+                </div>
+                <?php
+		        }
+		        if(isset($updateMsg)){
+		        ?>
+			    <div class="alert alert-success">
+				    <strong>UPDATE ! <?php echo $updateMsg; ?></strong>
+			    </div>
+                <?php
+		        }
+		        ?>   
+			    <div style="text-align: center;"><h2>MODIFIER</h2></div>
+			    <form method="post" class="form-horizontal">
+			        <div class="form-group mb-3">
+				       <label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;" >NOM</label>
+				       <div class="col-sm-6">
+				          <input type="text" name="nom" class="form-control" style="margin-left: 250px;" value="<?php echo $nom; ?>">
+				       </div>
+				    </div>
+				    <div class="form-group mb-3" >
+				       <label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">PRENOM</label>
+				       <div class="col-sm-6">
+				          <input type="text" name="prenom" class="form-control" style="margin-left: 250px;" value="<?php echo $prenom; ?>">
+				       </div>
+				    </div>
+				    <div class="form-group mb-3">
+				       <label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">GENRE</label>
+				       <div class="col-sm-6">
+				          <input type="text" name="genre" class="form-control" style="margin-left: 250px;" value="<?php echo $genre; ?>">
+				       </div>
+				    </div>
+				    <div class="form-group mb-3">
+				       <label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">TELEPHONE</label>
+				       <div class="col-sm-6">
+				          <input type="text" name="telephone" class="form-control" style="margin-left: 250px;" value="<?php echo $telephone; ?>">
+				       </div>
+				    </div>
+				    <div class="form-group mb-3">
+				       <label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;" >ADRESSE</label>
+				       <div class="col-sm-6">
+				          <input type="text" name="adresse" class="form-control" style="margin-left: 250px;" value="<?php echo $adresse; ?>">
+				       </div>
+				    </div>
+				    <div class="form-group mb-3" >
+				       <label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">AGE</label>
+				       <div class="col-sm-6">
+				          <input type="text" name="age" class="form-control" style="margin-left: 250px;" value="<?php echo $age; ?>">
+				       </div>
+				    </div>
+				    <div class="form-group mb-3">
+				       <label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">GROUPE SANGUIN</label>
+				       <div class="col-sm-6">
+				          <input type="text" name="gSanguin" class="form-control" style="margin-left: 250px;" value="<?php echo $gSanguin; ?>">
+				       </div>
+				    </div>
+				    <div class="form-group mb-3">
+				       <label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;" >MALADIE</label>
+				       <div class="col-sm-6">
+				          <input type="text" name="maladie" class="form-control" style="margin-left: 250px;" value="<?php echo $maladie; ?>">
+				       </div>
+				    </div>
+				    <div class="form-group mb-3" >
+				       <label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">ANTECEDENT</label>
+				       <div class="col-sm-6">
+				          <input type="text" name="antecedent" class="form-control" style="margin-left: 250px;" value="<?php echo $antecedent; ?>">
+				       </div>
+				    </div>
+				    <div class="form-group mb-3">
+				       <label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">TAILLE</label>
+				       <div class="col-sm-6">
+				          <input type="text" name="taille" class="form-control" style="margin-left: 250px;" value="<?php echo $taille; ?>">
+				       </div>
+				    </div>
+				    <div class="form-group mb-3">
+				       <label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">POIDS</label>
+				       <div class="col-sm-6">
+				          <input type="text" name="poids" class="form-control" style="margin-left: 250px;" value="<?php echo $poids; ?>">
+				       </div>
+				    </div>
+				    <div class="form-group mb-3">
+				       <label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">SITUATION MATRIMONIALE</label>
+				       <div class="col-sm-6">
+				          <input type="text" name="sMatrimoniale" class="form-control" style="margin-left: 250px;" value="<?php echo $sMatrimoniale; ?>">
+				       </div>
+				    </div>
+				    <div class="form-group mb-3">
+				       <label class="col-sm-3 control-label" style=" text-align: left;margin-left: 300px;">TEL PERSONNE PROCHE</label>
+				       <div class="col-sm-6">
+				          <input type="text" name="telPersonneProche" class="form-control" style="margin-left: 250px;" value="<?php echo $telPersonneProche; ?>">
+				       </div>
+				    </div>
+				    <div class="form-group">
+				        <div class="col-sm-offset-3 col-sm-9 m-t-15" style="margin-left: 250px;">
+					        <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              Mettre à jour
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                               <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Voulez vous vraiment modifier cette donnée?
+                                        </div>
+                                        <div class="modal-footer">
+	                                        <button  class="btn btn-success" type="submit"  name="btn_update" class="btn btn-danger " >Oui</button>
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Non</button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+		                    <a href="liste_pat.php" class="btn btn-danger">Annuler</a>
+		                </div>
+		            </div>
+			    </form>
+		    </div>
+	    </div>	
 	</div>
-			
-	</div>
-			<br>
+	<br>
 </div>								
 <?php include 'include/pied.php';?>
 <?php include 'include/script.php';?>
-<script src="js/bootstrap.bundle.js"></script>
-<script src="js/bootstrap.min.js"></script>								
-	</body>
+<script src="include/bootstrap.bundle.min.js"></script>
+<script src="include/bootstrap.min.js"></script>								
+</body>
 </html>
